@@ -1,0 +1,24 @@
+package poker;
+
+grammar PokerGame {
+  // Define the main rules of the game
+  Game = "start" Player+ "end";
+
+  // Define a player with a name and a hand of cards
+  Player = "player" name:Name "hand" hand:Hand;
+
+  // Define a hand as a collection of cards
+  Hand = Card+;
+
+  // Define a card with a rank and suit
+  Card = rank:Rank "of" suit:Suit;
+
+  // Define the possible ranks of cards
+  Rank = "Ace" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "Jack" | "Queen" | "King";
+
+  // Define the possible suits of cards
+  Suit = "Hearts" | "Diamonds" | "Clubs" | "Spades";
+
+  // Define a name for a player
+  Name = /[a-zA-Z]+/;
+}

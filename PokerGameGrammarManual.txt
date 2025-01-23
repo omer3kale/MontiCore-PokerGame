@@ -1,0 +1,36 @@
+# PokerGame Grammar Manual
+
+This manual provides an explanation of the methods and rules defined in the `PokerGame.mc4` grammar file for creating a poker game using MontiCore.
+
+## Package Declaration
+The grammar is part of the `poker` package.
+
+
+## Grammar Definition
+The `PokerGame` grammar defines the syntax and structure of the poker game.
+
+### Game Rule
+The `Game` rule defines the main structure of the game. The game starts with the keyword "start", followed by one or more players, and ends with the keyword "end".
+
+### Player Rule
+The `Player` rule defines a player with a name and a hand of cards. Each player is defined with the keyword "player", followed by their name and their hand of cards.
+
+### Hand Rule
+The `Hand` rule defines a collection of cards. Each hand consists of one or more cards.
+
+### Card Rule
+The `Card` rule defines a card with a rank and a suit. Each card is defined by its rank, followed by the keyword "of", and its suit.
+
+### Rank Rule
+The `Rank` rule defines the possible ranks of cards. The ranks include "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", and "King".
+
+### Suit Rule
+The `Suit` rule defines the possible suits of cards. The suits include "Hearts", "Diamonds", "Clubs", and "Spades".
+
+### Name Rule
+The `Name` rule defines the name of a player. The name consists of one or more alphabetic characters (a-z, A-Z).
+
+## Closing the Grammar
+The grammar definition is closed with a closing brace.
+
+This manual provides an overview of the key components and rules defined in the `PokerGame.mc4` grammar file. You can expand and modify these rules to add more details and features to your poker game.
